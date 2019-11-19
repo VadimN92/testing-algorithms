@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Algorithms</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Compare Performance Algorithms</h1>
+        <ul>
+            <li>Bubble Sort</li>
+            <li>Insertion Sort</li>
+            <li>Quick Sort</li>
+            <li>Native JS Sort</li>
+        </ul>
+        <label>
+            <span>Array length*:</span>
+            <input type="number" id="arrayLength" value="100" />
+        </label>
+        <button id="test-bubble-sort-btn">Let's test</button>
+        <canvas id="chart"></canvas>
+        <section class="spinner-wrapper">
+            <div class="lds-spinner" style="display: none;"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </section>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+<script src="algorithms/bubble-sort.js"></script>
+<script src="algorithms/insertion-sort.js"></script>
+<script src="algorithms/quick-sort.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
