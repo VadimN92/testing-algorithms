@@ -1,24 +1,3 @@
-/*function partition(array, left, right) {
-	const pilot = array[right];
-	let i = left - 1;
-
-	for (let j = left; j < right; j++) {
-		if (array[j] < pilot) {
-			i++;
-
-			const temp1 = array[i];
-			array[i] = array[j];
-			array[j]= temp1;
-		}
-	}
-
-	const temp2 = array[i+1];
-	array[i+1] = array[right];
-	array[right] = temp2;
-
-	return i+1;
-}*/
-
 function swap(array, firstIndex, secondIndex){
 	const temp = array[firstIndex];
 	array[firstIndex] = array[secondIndex];
@@ -68,27 +47,4 @@ function QuickSort(array, left, right) {
 			QuickSort(array, pi + 1, right);
 		}
 	}
-}
-
-
-
-function quickSort(items, left, right) {
-
-	let index;
-
-	if (items.length > 1) {
-
-		index = partition(items, left, right);
-
-		if (left < index - 1) {
-			quickSort(items, left, index - 1);
-		}
-
-		if (index < right) {
-			quickSort(items, index, right);
-		}
-
-	}
-
-	return items;
 }

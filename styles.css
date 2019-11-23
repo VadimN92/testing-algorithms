@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto Light";
+    font-family: "Roboto";
 }
 
 * {
@@ -10,9 +10,17 @@ body {
 
 .wrapper {
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 40px 25px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-top: 30px;
 }
 
 #test-bubble-sort-btn:disabled {
